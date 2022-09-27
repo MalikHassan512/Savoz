@@ -1,0 +1,158 @@
+import {StyleSheet} from 'react-native';
+import {Colors, height, IS_IPHONE_X, width} from '../../../constants';
+import Fonts from '../../../constants/Fonts';
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: Colors.WHITE.default,
+  },
+  scrollViewStyle: {
+    paddingHorizontal: '5%',
+    paddingTop: 10,
+  },
+  textDelivery: {
+    fontSize: 18,
+    fontFamily: Fonts.GILROY.SemiBold,
+    color: Colors.BLACK.default,
+    marginBottom: 10,
+  },
+  addressContainer: {
+    flexDirection: 'row',
+    // alignItems: 'center',
+    // justifyContent: 'space-between',
+  },
+  textAddress: {
+    fontSize: 14,
+    fontFamily: Fonts.GILROY.Medium,
+    color: Colors.BLACK.default,
+    width: width * 0.7,
+  },
+  icon: {
+    height: 20,
+    width: 20,
+    tintColor: Colors.ORANGE.default,
+    resizeMode: 'contain',
+    marginRight: 10,
+    marginTop: 10,
+  },
+  downArrow: {
+    height: 10,
+    width: 10,
+    resizeMode: 'contain',
+    tintColor: Colors.GRAY.default,
+    marginTop: 20,
+  },
+  dropButton: {
+    alignItems: 'flex-end',
+    paddingHorizontal: 15,
+    // justifyContent: 'center',
+    // borderWidth: 1,
+    // height: '100%',
+  },
+  codeContainer: {
+    borderWidth: 1,
+    height: IS_IPHONE_X ? height * 0.056 : height * 0.065,
+    borderRadius: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 15,
+    marginVertical: height * 0.03,
+    borderColor: Colors.BORDER.default,
+    justifyContent: 'space-between',
+  },
+  textMedium: {
+    fontSize: 14,
+    fontFamily: Fonts.GILROY.Medium,
+    color: Colors.BLACK.default,
+    lineHeight: 18,
+  },
+  textSemiBold: {
+    fontSize: 18,
+    fontFamily: Fonts.GILROY.SemiBold,
+    color: Colors.BLACK.default,
+    marginVertical: 10,
+  },
+  orderSummaryContainer: {
+    borderWidth: 1,
+    borderColor: Colors.BORDER.light,
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    backgroundColor: Colors.WHITE.default,
+    borderRadius: 20,
+    shadowColor: Colors.BLACK.default,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.23,
+    shadowRadius: 2.62,
+    elevation: 4,
+  },
+  rowContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginVertical: 10,
+    alignItems: 'center',
+  },
+  deliveryMethodContainer: {
+    marginTop: 20,
+  },
+  checkIcon: {
+    height: 20,
+    width: 20,
+    margin: 10,
+    marginLeft: 0,
+    resizeMode: 'contain',
+  },
+  addCardText: {
+    paddingVertical: 10,
+    fontFamily: Fonts.GILROY.SemiBold,
+    fontSize: 14,
+  },
+  lowAmountAlertBox: {
+    borderWidth: 1,
+    borderColor: Colors.BORDER.light,
+    overflow: 'hidden',
+    backgroundColor: Colors.WHITE.default,
+    flexDirection: 'row',
+    marginBottom: 20,
+    alignItems: 'center',
+    padding: 12,
+    borderRadius: 10,
+    shadowColor: Colors.BLACK.default,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.23,
+    shadowRadius: 2.62,
+    elevation: 2,
+  },
+  addressDropDown: {
+    // borderWidth: 1,
+    paddingStart: '8%',
+  },
+  dropDownAddressText: {
+    fontSize: 14,
+    fontFamily: Fonts.GILROY.Medium,
+    color: Colors.BLACK.default,
+    lineHeight: 18,
+    // borderWidth: 1,
+    paddingVertical: 5,
+    marginRight: '10%',
+  },
+  bulletDot: {
+    height: 7,
+    width: 7,
+    borderRadius: 10,
+    // backgroundColor: Colors.BLACK.default,
+    borderColor: Colors.ORANGE.default,
+    borderWidth: 2,
+    marginRight: 5,
+  },
+  mediumText: {
+    fontFamily: Fonts.GILROY.Medium,
+    fontSize: 14,
+  }
+});
